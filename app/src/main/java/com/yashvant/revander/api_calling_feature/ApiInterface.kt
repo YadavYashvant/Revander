@@ -12,5 +12,5 @@ public interface ApiInterface {
         "Accept: application/json"
     )
     @GET("users/{id}")
-    abstract fun getUserById(@Path("id") id: String): Response<UserModel?>?
+    abstract fun getUserById(@Path("id") id: String): Call<UserModel?>?
 }

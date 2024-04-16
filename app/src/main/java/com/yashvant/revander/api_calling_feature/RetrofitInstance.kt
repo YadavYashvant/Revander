@@ -12,7 +12,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object RetrofitInstance {
+/*object RetrofitInstance {
 
     val api: ApiInterface by lazy {
         Retrofit.Builder()
@@ -21,9 +21,8 @@ object RetrofitInstance {
             .build()
             .create(ApiInterface::class.java)
     }
-}
+}*/
 
-/*
 fun sendRequest(
     id: String,
     profileState: MutableState<ProfileModel>
@@ -33,7 +32,7 @@ fun sendRequest(
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val api = retrofit.create(UserApi::class.java)
+    val api = retrofit.create(ApiInterface::class.java)
 
     val call: Call<UserModel?>? = api.getUserById(id);
 
@@ -49,4 +48,4 @@ fun sendRequest(
             Log.e("Main", "Failed mate " + t.message.toString())
         }
     })
-}*/
+}
