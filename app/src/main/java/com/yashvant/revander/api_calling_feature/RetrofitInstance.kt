@@ -45,7 +45,7 @@ fun sendRequest(
         }
 
         override fun onFailure(call: Call<UserModel?>, t: Throwable) {
-            Log.e("Main", "Failed mate " + t.message.toString())
+            Log.e("Main", "API calling Failed!!" + t.message.toString())
         }
     })
 }
