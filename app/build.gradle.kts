@@ -68,4 +68,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.5.0")
+    implementation("com.github.skydoves:orbital:0.3.4")
+    implementation ("com.github.bumptech.glide:compose:1.0.0-beta01")
+
 }
