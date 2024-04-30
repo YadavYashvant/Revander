@@ -56,6 +56,8 @@ import androidx.compose.ui.unit.sp
 import com.bumptech.glide.integration.compose.CrossFade
 import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
 import com.bumptech.glide.integration.compose.GlideImage
+import com.mohamedrejeb.richeditor.model.rememberRichTextState
+import com.mohamedrejeb.richeditor.ui.material3.RichTextEditor
 import com.skydoves.orbital.Orbital
 import com.skydoves.orbital.animateBounds
 import com.skydoves.orbital.animateMovement
@@ -80,7 +82,7 @@ fun MainScreen() {
                         color = Color.White
                     )
                 }
-            )
+            );
         },
         content = {
 
@@ -92,7 +94,14 @@ fun MainScreen() {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
 
-                OrbitalLazyColumnSample()
+                val state = rememberRichTextState()
+
+                RichTextEditor(
+                    state = state,
+                    modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp, vertical = 32.dp)
+                )
+
+//                OrbitalLazyColumnSample()
 
                 /*val movementSpec = SpringSpec<IntOffset>(
                     dampingRatio = Spring.DampingRatioMediumBouncy,

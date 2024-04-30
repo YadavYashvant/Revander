@@ -71,4 +71,6 @@ dependencies {
     implementation("com.github.skydoves:orbital:0.3.4")
     implementation ("com.github.bumptech.glide:compose:1.0.0-beta01")
 
+    implementation("com.mohamedrejeb.richeditor:richeditor-compose:1.0.0-rc04")
+
 }
