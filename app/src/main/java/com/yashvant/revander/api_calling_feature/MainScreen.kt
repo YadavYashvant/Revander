@@ -103,50 +103,6 @@ fun MainScreen() {
 
 //                OrbitalLazyColumnSample()
 
-                /*val movementSpec = SpringSpec<IntOffset>(
-                    dampingRatio = Spring.DampingRatioMediumBouncy,
-                    stiffness = 200f
-                )
-
-                var isTransformed by rememberSaveable { mutableStateOf(false) }
-                val poster = rememberContentWithOrbitalScope {
-                    GlideImage(
-                        modifier = if (isTransformed) {
-                            Modifier.size(360.dp, 620.dp)
-                        } else {
-                            Modifier.size(130.dp, 220.dp)
-                        }.animateMovement(this, movementSpec),
-                        model = "https://assets.architecturaldigest.in/photos/60004a09d68a278e29c86a11/16:9/w_2560%2Cc_limit/feature6-1366x768.jpg",
-                        contentScale = ContentScale.Fit,
-                        contentDescription = null
-                    )
-                }
-
-                Orbital(
-                    modifier = Modifier
-                        .clickable { isTransformed = !isTransformed }
-                ) {
-                    if (isTransformed) {
-                        Column(
-                            Modifier.fillMaxSize(),
-                            horizontalAlignment = Alignment.CenterHorizontally,
-                            verticalArrangement = Arrangement.Center
-                        ) {
-                            poster()
-                        }
-                    } else {
-                        Column(
-                            Modifier
-                                .fillMaxSize()
-                                .padding(20.dp),
-                            horizontalAlignment = Alignment.End,
-                            verticalArrangement = Arrangement.Bottom
-                        ) {
-                            poster()
-                        }
-                    }
-                }*/
-
                 val id = remember {
                     mutableStateOf(TextFieldValue())
                 }
