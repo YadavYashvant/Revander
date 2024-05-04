@@ -176,13 +176,11 @@ fun OrbitalLazyColumnSample() {
                                 Text(
                                     text = "Poster name",
                                     fontSize = 18.sp,
-                                    color = Color.Black,
                                     fontWeight = FontWeight.Bold,
                                 )
 
                                 Text(
                                     text = "This is description",
-                                    color = Color.Gray,
                                     fontSize = 12.sp,
                                     maxLines = 3,
                                     overflow = TextOverflow.Ellipsis,
