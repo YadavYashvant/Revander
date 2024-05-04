@@ -96,12 +96,12 @@ fun MainScreen() {
 
                 val state = rememberRichTextState()
 
-                RichTextEditor(
+                /*RichTextEditor(
                     state = state,
                     modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp, vertical = 32.dp)
-                )
+                )*/
 
-//                OrbitalLazyColumnSample()
+                OrbitalLazyColumnSample()
 
                 val id = remember {
                     mutableStateOf(TextFieldValue())
