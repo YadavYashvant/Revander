@@ -82,8 +82,6 @@ fun MainScreen() {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
 
-                val state = rememberRichTextState()
-
                 /*RichTextEditor(
                     state = state,
                     modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp, vertical = 32.dp)
