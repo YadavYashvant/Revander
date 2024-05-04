@@ -72,18 +72,6 @@ import com.yashvant.revander.utils.MockUtils
 @Composable
 fun MainScreen() {
     Scaffold(
-        topBar = {
-            TopAppBar(
-                title = {
-                    Text(
-                        text = "Simple API Request",
-                        modifier = Modifier.fillMaxWidth(),
-                        textAlign = TextAlign.Center,
-                        color = Color.White
-                    )
-                }
-            );
-        },
         content = {
 
             val scrollstate = rememberScrollState()
